@@ -1,0 +1,1 @@
+Read and follow AGENTS.md, README.md, and PLAN.md. This is a student Svelte component project. Help with small explained changes; do not design or generate the whole site. Fence generated code with comments naming the tool and student's prompt, and update public/citations.html for all AI assistance.

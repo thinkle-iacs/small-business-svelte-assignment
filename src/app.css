@@ -1,0 +1,9 @@
+/* Instructor starter, drafted with OpenAI Codex: minimal readable defaults; choose your business's visual system. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; line-height: 1.5; }
+main { max-width: 65rem; margin-inline: auto; padding: 1.5rem; }
+img { max-width: 100%; height: auto; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
