@@ -1,26 +1,28 @@
 # Small Business, Built from Components
 
-Rebuild a real local business's website using Svelte. Keep its real identity—name, branding, and colors—while organizing the design into meaningful components. You may improve the layout and usability while keeping the business recognizable.
+Redesign a real local business's website using Svelte. Your goal is a responsive, attractive website with a modern look and reusable components—a significant upgrade to the existing site. Keep the business recognizable by using its real name, branding, and colors.
 
 ## 1. Find a local business website
 
-Choose an actual independent local business with its own hand-rolled or custom website: Joe's Sandwich Shop, not Panera. Look for a site with enough content and visual structure to divide into pieces. Use the business's own website, rather than a delivery-service listing, social-media profile, or national chain's template.
+Choose an actual independent local business with its own website: Joe's Sandwich Shop, not Panera. Look for a site with enough content and visual structure to divide into pieces. Use the business's own website, rather than a delivery-service listing, social-media profile, or national chain's template.
 
 Start with the page you want to rebuild. Save a reference screenshot in `reference/`, link the original in `PLAN.md`, and record the logo, brand colors (hex values), type choices, and key content. Identify what a visitor needs most: a menu, services, hours, location, or a way to contact the business.
 
 ### Local possibilities to investigate
 
-These are starting points around Tyngsborough and Lowell. Visit the current site and check that its design and scope fit before choosing. A custom-looking site does not prove how it was built; discuss an uncertain choice with your teacher.
+These are suggestions, not assigned choices. You may choose another suitable local business. Look for opportunities to improve the site's appearance, organization, and experience on a phone.
 
-- [Brothers Pizza and Pasta, Tyngsborough](https://brotherspizzatyngsboro.com/index.html): menu categories, food sections, contact details.
-- [Sullivan Farms Homemade Ice Cream, Tyngsborough](https://www.sullivanfarmsicecream.com/): menu, story, location, navigation.
-- [Atlas Sports, Lowell](https://www.atlassportinggoods.com/): bicycle sales, repairs, services, shop information.
+- [Pizzeria Presti, Westford](https://pizzeriaprestiwestford.com/)
+- [Tiger An's Taekwondo, Tyngsborough](https://www.tigeranstyngsboro.com/)
+- [Tyngs Starry Hair Design](https://www.tyngstarryhairdesign.com/)
+- [Belmont Printing](https://belmontprinting.com/)
+- [Iron Rose Fitness](https://www.ironrosefit.com/)
 
 You may find another local restaurant, barber, repair shop, florist, or other independent business. Start with a manageable homepage or main information page. You do not need to recreate an ordering system or the entire original site.
 
 ## 2. Break the design into components
 
-Before coding, complete `PLAN.md`. Make a labeled sketch and define **at least four meaningful components**. For each, explain:
+Before coding, complete `PLAN.md`. Make a labeled sketch and define **at least three meaningful components**. For each, explain:
 
 - What is this component responsible for?
 - What information does it receive as props? Give names and example values.
@@ -40,7 +42,7 @@ App
 
 Your site may need different pieces. A salon might use `ServiceList` and `StylistProfile`; a repair shop might use `RepairService` and `HoursAndLocation`. Choose boundaries that make sense for your design. A component can organize a distinct section or provide a reusable design. Splitting every heading into a separate file does not automatically improve the design.
 
-**At least one component must appear three or more times with different information passed through props.** This is where reuse becomes useful: change the shared component once and every instance updates. The supplied `ExampleCard` demonstrates props; replace it with your own work. It does not count toward your four components.
+**At least one component must appear multiple times (at least twice) with different information passed through props.** This is where reuse becomes useful: change the shared component once and every instance updates. The supplied `ExampleCard` demonstrates props; replace it with your own work. It does not count toward your three components.
 
 ## 3. Design and render, beginning with one component
 
@@ -53,7 +55,7 @@ Then build the surrounding components and assemble the page. Use semantic HTML, 
 By the end of class, submit a source/editor link showing:
 
 1. Your chosen business, original URL, reference screenshot, and branding notes.
-2. A sketch and definitions for at least four components in `PLAN.md`.
+2. A sketch and definitions for at least three components in `PLAN.md`.
 3. At least one of your own components rendering in Svelte.
 4. A sentence explaining its props and your next step.
 
@@ -61,10 +63,14 @@ Today's checkpoint is a start on the project; the whole site need not be finishe
 
 ### Finished project requirements
 
-- A coherent page for your chosen real independent business, retaining its branding and colors.
-- At least four meaningful student-built Svelte components, assembled into the page.
-- At least one component reused three or more times with different props; use an array and `{#each}` when appropriate.
-- Usable phone and desktop layouts, semantic landmarks, useful image alt text, labeled controls, keyboard access, and visible focus.
+1. **Break your design into at least three meaningful Svelte components.** Define each component's responsibility and assemble them into a coherent page. The supplied example does not count.
+2. **Reuse at least one component multiple times with different props.** Render at least two instances with different information; use an array and `{#each}` when appropriate. Be ready to explain what stays the same and what changes.
+3. **Make the design responsive at phone and laptop sizes.** Test at least two widths, such as 390px and 1366px, and check widths in between. Adapt the layout, navigation, images, and typography so content remains readable and usable without clipping, overlap, or accidental horizontal scrolling.
+4. **Make your design a significant upgrade to the existing website.** Create an attractive, modern design while retaining the business's branding and colors. Improve visual hierarchy, typography, spacing, navigation, and access to important information. Show before-and-after screenshots and explain specific improvements and how they help visitors. Simply moving the existing design into Svelte is not enough.
+
+For submission, also include:
+
+- Semantic landmarks, useful image alt text, labeled controls, keyboard access, and visible focus.
 - Working navigation and contact links. Choose interactions that serve the business; an extra interactive feature is optional.
 - Completed planning and brief testing/reflection notes in `PLAN.md`.
 - Sources and AI assistance credited near relevant code and on the visible `citations.html` page.
@@ -122,9 +128,9 @@ This works individually. If working with classmates, first agree on the componen
 
 | Aspect | Meeting the standard (3) | Mastery (4) |
 | --- | --- | --- |
-| Appearance | Recognizable branding, intentional hierarchy and spacing, readable responsive layouts. | A polished visual system that carries the business's identity across content and screen sizes. |
+| Appearance | A significant visual and usability upgrade to the original, with recognizable branding, intentional hierarchy and spacing, and responsive phone/laptop layouts. | A polished visual system that carries the business's identity across content and screen sizes. |
 | Function | Visitors can find key information and use navigation/contact links; semantic markup and keyboard access work. | User testing leads to clear improvements; varied content and screen sizes are handled thoughtfully. |
-| Components | Four meaningful components; a repeated component receives different props; you can explain the structure. | Boundaries and data flow make the site easy to change; shared revisions stay consistent across instances. |
+| Components | At least three meaningful components; one is reused at least twice with different props; you can explain the structure. | Boundaries and data flow make the site easy to change; shared revisions stay consistent across instances. |
 
 These describe evidence for the overall Digital Creation assessment, not separate point totals. More components or extra features alone do not demonstrate mastery.
 
